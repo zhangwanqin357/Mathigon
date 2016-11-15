@@ -1,2 +1,0 @@
-# Mathigon
-world.mathigon.org
