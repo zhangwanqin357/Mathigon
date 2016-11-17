@@ -49,7 +49,7 @@ html,body{width: 100%;height: 100%;font-size: 16px;}
 }*/
 .top{
 	position: fixed;
-	z-index: 100;
+	z-index: 50;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -69,7 +69,7 @@ html,body{width: 100%;height: 100%;font-size: 16px;}
 	position: fixed;
 	top: 34px;
 	right: 2px;
-	z-index: 900;
+	z-index: 50;
 	-webkit-transition: opacity .75s;
 	-moz-transition: opacity .75s;
 	transition: opacity .75s
@@ -247,15 +247,18 @@ html,body{width: 100%;height: 100%;font-size: 16px;}
 }
 .main3{
 	background: url(../images/background/logic_1200.jpg) no-repeat center center;
-	background-size: cover;z-index: 3;
+	background-size: cover;
+	z-index: 3;
 }
 .main4{
 	background: url(../images/background/games_1200.jpg) no-repeat center center;
-	background-size: cover;z-index: 2;
+	background-size: cover;
+	z-index: 2;
 }
 .main5{
 	background: url(../images/background/matter_1200.jpg) no-repeat center center;
-	background-size: cover;z-index: 1;
+	background-size: cover;
+	z-index: 1;
 }
 .main0_cont{
 	position: absolute;
@@ -297,6 +300,7 @@ html,body{width: 100%;height: 100%;font-size: 16px;}
 	/*overflow: hidden;*/
 }
 .options li{
+	position: relative;
 	float: left;
 	width: 30%;
 	height: 96px;
@@ -330,6 +334,14 @@ html,body{width: 100%;height: 100%;font-size: 16px;}
 	border-radius: 8px;
 	width: 100%;
 	height: 100%;
+}
+.options .soon{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 72px;
+	height: 72px;
+	background: url(../images/coming.png) no-repeat right bottom;
 }
 @media screen and (min-width: 531px) and (max-width: 800px){
 	.options{
@@ -386,7 +398,7 @@ html,body{width: 100%;height: 100%;font-size: 16px;}
 	margin-left: -154px;
 	width: 308px;
 	height: 44px;
-	z-index: 100;
+	z-index: 50;
 	-webkit-transition: bottom .75s, opacity .75s;
 	-moz-transition: bottom .75s, opacity .75s;
 	transition: bottom .75s, opacity .75s
