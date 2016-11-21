@@ -1,4 +1,10 @@
-html,body{width: 100%;height: 100%;font-size: 16px;}
+html,body{
+	width: 100%;
+	height: 100%;
+	/*font-size: 16px;*/
+	font-family: futura-pt,Futura Std,Futura,Helvetica,sans-serif;
+	overflow: hidden;
+}
 .fl{float: left;}
 .fr{float: right;}
 .hide{display: none;}
@@ -49,7 +55,7 @@ html,body{width: 100%;height: 100%;font-size: 16px;}
 }*/
 .top{
 	position: fixed;
-	z-index: 50;
+	z-index: 1000;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -297,7 +303,7 @@ html,body{width: 100%;height: 100%;font-size: 16px;}
 	margin: 0 auto 10px;
 	max-width: 1020px;
 	_max-width:1020px;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 .options li{
 	position: relative;
@@ -423,7 +429,6 @@ html,body{width: 100%;height: 100%;font-size: 16px;}
 .iconNav li:hover ,.iconNav div:hover{opacity: 1;}
 #nP{
 	background-position: 0 -46px;
-	opacity: 0;
 	visibility: hidden;
 }
 #n0{
@@ -498,4 +503,518 @@ html,body{width: 100%;height: 100%;font-size: 16px;}
 	#n5{
 		background-position: center -180px;
 	}
+}
+/*遮罩*/
+#shadow{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	top: 30px;
+	right: 0;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 99;
+	background-color:#181824;
+	opacity: .5;
+	overflow: hidden;
+	display: none;
+}
+/*子页面*/
+.submain_item{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	z-index: 100;
+	/*display: none;*/
+}
+/*页面内容区*/
+.item_cont{
+	width: 840px;
+	margin: 0 auto;
+	opacity: 1;
+}
+@media screen and (min-width: 600px) and (max-width: 950px){
+	.item_cont{
+		width: 90%;
+	}
+}
+@media screen and (max-width: 600px){
+	.item_cont{
+		width: 100%;
+	}
+}
+.close{
+	width: 100%;
+	height: 50px;
+}
+@media screen and (max-width: 600px){
+	.close{
+		position: absolute;
+		width: 98.5%;
+		top: -15px;
+		left: 0;
+		right: 0;
+		z-index: 200;
+	}
+}
+.close div{
+	height: 36px;
+	margin-top: 14px;
+}
+.backPage{
+	display: none;
+}
+.backPage span{
+	display: inline-block;
+	width: 25px;
+	height: 36px;
+	vertical-align: middle;
+	background: url(../images/layout.png) no-repeat left center;
+	background-position: -30px -84px;
+}
+.backPage em{
+	display: inline-block;
+	height: 36px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 42px;
+	vertical-align: middle;
+}
+.closeme{
+	width: 30px;
+	margin-right: -4px;
+	background: url(../images/layout.png) no-repeat center center;
+	background-position: 0 -87px;
+}
+.submain_item0{
+	width: 100%;
+	overflow: hidden;
+}
+.header{
+	position: relative;
+	width: 100%;
+	height: 320px;
+	overflow: hidden;
+	background-color: #242430;
+}
+@media screen and (min-width: 735px) and (max-width: 840px){
+	.header{
+		height: 280px;
+	}
+}
+@media screen and (min-width: 630px) and (max-width: 735px){
+	.header{
+		height: 240px;
+	}
+}
+@media screen and (max-width: 630px){
+	.header{
+		height: 200px;
+	}
+}
+@media screen and (max-width: 600px){
+	.header{
+		height: 180px;
+	}
+}
+
+/*main0*/
+#Introduction .header{
+	background: url(../images/headers/Introduction.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Credits .header{
+	background: url(../images/headers/Credits.jpg) no-repeat center center;
+	background-size: cover;
+}
+/*main1*/
+#Conic_Sections .header{
+	background: url(../images/headers/Conic_Sections.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Polygons_and_Polyhedra .header{
+	background: url(../images/headers/Polygons_and_Polyhedra.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Symmetry_and_Groups .header{
+	background: url(../images/headers/Symmetry_and_Groups.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Modelling_Space .header{
+	background: url(../images/headers/Modelling_Space.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Dimensions_and_Distortions .header{
+	background: url(../images/headers/Dimensions_and_Distortions.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Fractals .header{
+	background: url(../images/headers/Fractals.jpg) no-repeat center center;
+	background-size: cover;
+}
+/*main2*/
+#Sequences .header{
+	background: url(../images/headers/Introduction.jpg) no-repeat center center;
+	background-size: cover;
+	background-size: cover;
+}
+#Functions_and_Series .header{
+	background: url(../images/headers/Credits.jpg) no-repeat center center;
+	background-size: cover;
+	background-size: cover;
+}
+#Prime_Numbers .header{
+	background: url(../images/headers/Introduction.jpg) no-repeat center center;
+	background-size: cover;
+	background-size: cover;
+}
+#More_Number_Theory .header{
+	background: url(../images/headers/Credits.jpg) no-repeat center center;
+	background-size: cover;
+	background-size: cover;
+}
+#Real_Irrational_Imaginary .header{
+	background: url(../images/headers/Introduction.jpg) no-repeat center center;
+	background-size: cover;
+	background-size: cover;
+}
+#Infinity .header{
+	background: url(../images/headers/Credits.jpg) no-repeat center center;
+	background-size: cover;
+	background-size: cover;
+}
+/*main3*/
+#Combinatorics .header{
+	background: url(../images/headers/Introduction.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Graph_Theory .header{
+	background: url(../images/headers/Credits.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Knots_Mazes_Labyrinths .header{
+	background: url(../images/headers/Introduction.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Optimisation .header{
+	background: url(../images/headers/Credits.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Logic_and_Paradoxes .header{
+	background: url(../images/headers/Introduction.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Axioms_and_Proof .header{
+	background: url(../images/headers/Credits.jpg) no-repeat center center;
+	background-size: cover;
+}
+/*main4*/
+#Probability .header{
+	background: url(../images/headers/Introduction.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Polygons_and_Polyhedra .header{
+	background: url(../images/headers/Credits.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Symmetry_and_Groups .header{
+	background: url(../images/headers/Introduction.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Modelling_Space .header{
+	background: url(../images/headers/Credits.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Dimensions_and_Distortions .header{
+	background: url(../images/headers/Introduction.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Fractals .header{
+	background: url(../images/headers/Credits.jpg) no-repeat center center;
+	background-size: cover;
+}
+/*main5*/
+#Forces_Motion_Calculus .header{
+	background: url(../images/headers/Introduction.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Waves_and_Music .header{
+	background: url(../images/headers/Credits.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Fluid_Dynamics .header{
+	background: url(../images/headers/Introduction.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Chaos .header{
+	background: url(../images/headers/Credits.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Theory_of_Relativity .header{
+	background: url(../images/headers/Introduction.jpg) no-repeat center center;
+	background-size: cover;
+}
+#Quantum_Mechanics .header{
+	background: url(../images/headers/Credits.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.header span{
+	position: absolute;
+	right: 18px;
+	bottom: 17px;
+	display: block;
+	width: 25px;
+	height: 29px;
+	background: url(../images/layout.png) no-repeat center center;
+	background-position: -160px -93px;
+}
+.subNav{
+	position: absolute;
+	right: -290px;
+	top: 0;
+	bottom: 0;
+	width: 290px;
+	background-color: #fff;
+	z-index: 1000;
+	overflow-y: auto;
+	-webkit-transition: opacity .05s;
+	-moz-transition: opacity .05s;
+	-ms-transition: opacity .05s;
+	-o-transition: opacity .05s;
+	transition: opacity .05s;
+	
+}
+@media screen and (max-width: 600px){
+	.subNav{
+		display: none;
+		visibility: hidden;
+	}
+	.header span{
+		display: none;
+		visibility: hidden;
+	}
+}
+.subNav_cont{
+	padding: 1.5em 2em;
+	color: #000;
+	text-align: right;
+}
+.subNav_cont h3{
+	font-size: 1.5em;
+	line-height: 2;
+	font-weight:100;
+	font-family: futura-pt,Futura Std,Futura,Helvetica,sans-serif; 
+	letter-spacing: 1px;
+	margin-bottom: .5em;
+}
+.subNav_cont ul li a{
+	font-family: futura-pt,Futura Std,Futura,Helvetica,sans-serif;
+	font-size: 1em;
+	line-height: 2;
+	font-weight:normal;
+	color: #000;
+	margin-bottom: 8px; 
+	letter-spacing: 1px;
+}
+.subNav_cont ul li a:hover{
+	text-decoration: none;
+	color: #0060bf;
+}
+.mid{
+	width: 100%;
+}
+.mid_cont{
+	background-color: #fff;
+	padding: 50px 40px;
+}
+@media screen and (max-width: 950px){
+	.mid_cont{
+		padding: 40px 5%;
+	}
+}
+.Advertising{
+	text-align: center;
+	font-weight: bold;
+	vertical-align: middle;
+	margin-bottom: 50px;
+	font-size: .5em;
+	height: .8em;
+	line-height: 1;
+	color: #aaaaaa;
+}
+@media screen and (max-width: 600px){
+	.Advertising{
+		display: none;
+		visibility: hidden;
+	}
+}
+.Advertising input{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	line-height: 10px;
+	outline: none;
+	border: none;
+	background-color: #aaaaaa;
+	color: #fff;
+	margin-left: 8px;
+	vertical-align: middle;
+	margin-top: -3px;
+}
+.Advertising input:hover{
+	background-color: #666666;
+}
+.lines{
+	margin-top: 50px;
+	font-weight: normal;
+}
+.linesImg{
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+@media screen (min-width: 600px) and (max-width: 750px){
+	.linesImg{
+		width: 20%;
+	}
+}
+#Credits .linesImg{
+	width: 200px;
+	height: 200px;
+}
+.lines p{
+	font-family: minion-pro,Minion Pro,"Times New Roman",Times,serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: lighter;
+	/*letter-spacing: 1px;*/
+}
+.lines p span{
+	color: #888;
+}
+.lines p a,.lines p span a{
+	color: #0072d8;
+	text-decoration: none;
+}
+.lines p q{
+	font-style: italic;
+}
+.linesImg img{
+	width: 100%;
+	height: 100%;
+}
+.linesImg p{
+	line-height: 18px;
+	font-size: 10px;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	font-style: italic;
+	text-align: center;
+}
+.lines h2{
+	font-family: futura-pt,Futura Std,Futura,Helvetica,sans-serif;
+	font-size: 1.8em;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-bottom: .5em;
+}
+.lines h3{
+	font-family: futura-pt,Futura Std,Futura,Helvetica,sans-serif;
+	font-size: 1.3em;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+@media screen and (max-width: 600px){
+	.lines{
+		margin-top: 20px;
+	}
+	.linesImg{
+		width: 200px;
+		height: 285px;
+	}
+	.Img{
+		height: 250px;
+		margin-bottom: 5px;
+	}
+	.lines h2{
+		font-size: 1.5em;
+		letter-spacing: 1px;
+		margin-bottom: .5em;
+	}
+	.lines h3{
+		font-size: 1em;
+		margin-bottom: 1em;
+		margin-top: 1em;
+	}
+	.lines p{
+		font-size: 13px;
+		line-height: 18px;
+		font-weight: lighter;
+		letter-spacing: 1px;
+	}
+	.linesImg p{
+		line-height: 16px;
+		font-size: 6px;
+		letter-spacing: 0;
+		font-weight: lighter;
+		font-style: italic;
+	}
+}
+@media screen and (max-width: 600px){
+	.linesImg{
+		float: none;
+		width: 300px;
+		height: 500px;
+		margin: 0 auto;
+	}
+	.Img{
+		width: 100%;
+		height: 460px;
+	}
+}
+
+
+.footer{
+	width: 100%;
+	height: 42px;
+	line-height: 42px;
+	margin-bottom: 42px;
+}
+.prevPage{
+	text-align: left;
+	opacity: .6;
+}
+.nextPage{
+	text-align: right;
+	opacity: .6;
+}
+.prevPage span,.nextPage span{
+	display: inline-block;
+	width: 25px;
+	height: 42px;
+	vertical-align: middle;
+}
+.prevPage span{
+	background: url(../images/layout.png) no-repeat left center;
+	background-position: -30px -84px;
+}
+.nextPage span{
+	background: url(../images/layout.png) no-repeat right center;
+	background-position: -55px -84px;
+}
+.prevPage em,.nextPage em{
+	font-size: 18px;
+	line-height:42px;
+	color: #fff;
+	font-weight: normal;
+	vertical-align: middle;
+}
+.prevPage:hover,.nextPage:hover{
+	opacity: 1;
 }
